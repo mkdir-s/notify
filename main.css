@@ -1,0 +1,32 @@
+body {
+    background-color: #333;
+}
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.button {
+    border: none;
+    background-color: orange;
+    text-transform: uppercase;
+    font-family: monospace;
+    padding: 15px 45px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+.notify-banner {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: orange;
+    padding: 20px 30px;
+    font-size: 25px;
+    font-family: monospace;
+    transform: translateX(200%);
+    transition: all .3s ease-in-out;
+}
+.notify-banner._active {
+    transform: translate(0);
+}
